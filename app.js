@@ -16,6 +16,7 @@ const mainAudio = document.getElementById('main-audio');
 const volumeChanger = document.getElementById('volume');
 
 const progressBar = document.querySelector('.progress-bar');
+const progressArea = document.querySelector('.progress-area')
 
 const currentTime = document.querySelector('.current-point');
 const durationTime = document.querySelector('.duration')
@@ -132,9 +133,11 @@ mainAudio.addEventListener('loadeddata', function () {
 //ng zone
 // services معماری
 
-progressBar.addEventListener('click', function (e) {
-    let progressBarWidthValue = progressBar.clientWidth;
+progressArea.addEventListener('click', function (e) {
+    let progressBarWidthValue = progressArea.clientWidth;
     let clickOffsetX = e.offsetX;
     let songDuration = mainAudio.duration
-    console.log(songDuration)
+    console.log(songDuration);
+
+    mainAudio.currentTime = (clickOffsetX / progressBarWidthValue) * songDuration;
 })
