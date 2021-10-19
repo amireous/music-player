@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <title>music player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="music-header">
+                <i class="fas fa-chevron-down"></i>
+                <p class="now-playing">Now playing</p>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="music-album">
+                <div class="music-cover">
+                    <img src="https://thumbs.dreamstime.com/b/music-sound-wave-template-blue-purple-colors-illustration-your-album-cover-design-abstract-radial-digital-signal-form-160916779.jpg"
+                        alt="Music Cover" id="music-img">
+                </div>
+            </div>
+            <div class="music-description">
+                <div class="music-info">
+                    <p class="title"></p>
+                    <p class="music-artist"></p>
+                </div>
+            </div>
+            <div class="music-playeground">
+                <div class="upper-control">
+                    <div class="progress-area">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="music-points">
+                        <p class="current-point">0:40</p>
+                        <p class="duration">3:20</p>
+                    </div>
+                    <audio id="main-audio" src=""></audio>
+                </div>
+                <div class="music-controls">
+                    <i class="fas fa-retweet replay" id="replay"></i>
+                    <i class="fas fa-step-backward" id="prev"></i>
+                    <i class="fas fa-play-circle play-pause"></i>
+                    <i class="fas fa-step-forward" id="next"></i>
+                    <i class="fas fa-list-ul" id="playlist"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
