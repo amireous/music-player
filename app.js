@@ -80,7 +80,7 @@ const nextMusic = function () {
     if (musicIndex >= playList.length) {
         musicIndex = 0
     }
-    setMusic()
+    setMusic();
     playMusic();
 }
 
